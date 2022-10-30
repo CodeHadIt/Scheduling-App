@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>My To Do List</title>
+</head>
+<body>
+    <!--the body is the m,ain screen but the actual content is wrapped in a div-->
+    <div class="container">
+        <div class="header">
+            <div class="clear-btn">
+                <i class="fa-solid fa-rotate"></i>
+            </div>
+            <div id="date"></div>
+            <div id="time"></div>
+        </div>
+        <div class="content">
+            <ul id="list">
+                <!--This is commented out because we dont need it to display when we load at first-->
+                <!--
+                <li class="item">
+                    <i class="fa-regular fa-circle co" job="complete" id="0"></i>
+                    <p class="text">Drink Coffee</p>
+                    <i class="fa-solid fa-trash de" job="trash" id="0"></i>
+                </li>
+                -->
+            </ul>
+        </div>
+        <div class="add-to-do">
+            <i class="fa fa-plus-circle"></i>
+            <input type="text" id="input" placeholder="What would you like to add?">
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
