@@ -45,6 +45,11 @@ const options = {weekday: "long", month:"short", day:"numeric", year:"2-digit"};
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 timeElement.innerHTML = `${today.getHours()}:${today.getMinutes()}`;
 
+if(today.getHours() > 17) {
+    body = document.body;
+    body.style.backgroundColor = "#121629";
+}
+
 //to do function
 function addToDo(toDo, id, done, trash) {
 
